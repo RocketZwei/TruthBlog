@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Truth Blog{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title">{{ post.title }}</h1>
+            <h2 class="subtitle">
+                Published {{ post.publish }} by {{ post.author }}
+            </h2>
+            <p class="content">{{ post.body }}</p>
+        </div>
+    </section>
+{% endblock %}
